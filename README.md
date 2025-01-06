@@ -12,5 +12,4 @@ data file :             <br />
 &emsp;&emsp;&emsp;&emsp; train : test = 0.6 : 0.4 : save_model(0.4)_18            <br />
 &emsp;&emsp;&emsp;&emsp; train : test = 0.8 : 0.2 : save_model(0.2)_12            <br />
 analysis file :     <br />
-&emsp;&emsp;Analysis file of experimental results    <br />
-&emsp;&emsp;&emsp;&emsp; analysis    <br />
+&emsp;&emsp;Analysis file of experimental results : analysis    <br />
