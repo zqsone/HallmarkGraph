@@ -19,3 +19,6 @@ analysis file :     <br />
 
 tensorflow=2.8.2=gpu_py39hc0c9373_0     <br />
 keras=2.8.0=py39h06a4308_0     <br />
+shap=0.45.1     <br />
+scikit-learn=1.4.1.post1     <br />
+matplotlib=3.9.2     <br />
