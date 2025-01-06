@@ -15,7 +15,7 @@ analysis file :     <br />
 &emsp;&emsp;Analysis file of experimental results : analysis    <br />
 
 
-## If you wish to repeat our experiment, please refer to the following configuration :
+## If you wish to repeat our experiment, please refer to the following configuration :     <br />
 
-tensorflow=2.8.2=gpu_py39hc0c9373_0
-keras=2.8.0=py39h06a4308_0
+tensorflow=2.8.2=gpu_py39hc0c9373_0     <br />
+keras=2.8.0=py39h06a4308_0     <br />
