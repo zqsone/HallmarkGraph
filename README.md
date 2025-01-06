@@ -16,3 +16,6 @@ analysis file :     <br />
 
 
 ## If you wish to repeat our experiment, please refer to the following configuration :
+
+tensorflow=2.8.2=gpu_py39hc0c9373_0
+keras=2.8.0=py39h06a4308_0
