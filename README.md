@@ -19,25 +19,25 @@ Qingsong Zhang<sup>1</sup> , Fei Liu<sup>1,\*</sup>, Xin Lai<sup>2,3,\*</sup>
 
 code file :           
 
-​			06_BioGCN_load_model_and_test_pred.py        
+​			&emsp;&emsp; 06_BioGCN_load_model_and_test_pred.py        
 
 cleaned_data_and_target file :          
 
-​			Training and testing data ： cleaned_data_out.csv       
+​			&emsp;&emsp; Training and testing data ： cleaned_data_out.csv       
 
-​			Training and testing label :   cleaned_data_test_12_7.xlsx  
+​			&emsp;&emsp; Training and testing label :   cleaned_data_test_12_7.xlsx  
 
 adjacency_matrix file:
 
-​			ten Hallmark related adjacency matrices            
+​			&emsp;&emsp; ten Hallmark related adjacency matrices            
 
 saved model file :           
 
-​			train : test = 0.6 : 0.4 : save_model(0.4)_18         
+​			&emsp;&emsp; train : test = 0.6 : 0.4 : save_model(0.4)_18         
 
 analysis file :   
 
-​			Analysis file of experimental results : analysis    
+​			&emsp;&emsp; Analysis file of experimental results : analysis    
 
 
 ## If you wish to repeat our experiment, please refer to the following configuration :     
