@@ -37,7 +37,7 @@ main/
 
 ## How to eproduce the results of the paper:
 
-1. You first need to downloaded the data and trained models and store them in `data` and `best-model`, respectively (see readme.md in the folder).
+1. You first need to download the data and trained models and store them in `data` and `best-model` folders, respectively (see readme.md in the folder).
 2. Run the file `code/HallmarkGraph.py`
 3. If you want to predict hard samples, please set `Whether_to_predict_hard_stamples = TRUE` in `code/HallmarkGraph.py`.
 4. If you want to calculate the shap, please set `Whether_to_calculate_the_shap = TRUE` in `code/HallmarkGraph.py`.
