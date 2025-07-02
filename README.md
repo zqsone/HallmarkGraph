@@ -31,3 +31,16 @@ main/
 2. Run the file `code/HallmarkGraph.py`
 3. If you want to predict hard samples, please set `Whether_to_predict_hard_stamples = TRUE` in `code/HallmarkGraph.py`.
 4. If you want to calculate the shap, please set `Whether_to_calculate_the_shap = TRUE` in `code/HallmarkGraph.py`.
+
+## Usage 
+If you find our work useful, please consider citing it:
+```bash
+@article{
+  title={HallmarkGraph: a cancer hallmark informed graph neural network for classifying hierarchical tumor subtypes},
+  author={Qingsong Zhang, Fei Liu, Xin Lai},
+  journal={Submitted},
+  year={2025}
+}
+
+This code is made available under the GPLv3 License and is available for non-commercial academic purposes.
+```
