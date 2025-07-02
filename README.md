@@ -11,8 +11,7 @@ Qingsong Zhang<sup>1</sup> , Fei Liu<sup>1,\*</sup>, Xin Lai<sup>2,3,\*</sup>
 <sup>\*</sup>Corresponding author: South China University of Technology, Guangzhou, China. Email: feiliu@scut.edu.cn (FL). Faculty of Medicine and Health Technology, Tampere University, Tampere, Finland. Email: and xin.lai@tuni.fi (XL).
 
 
-
-## This is the file library for HallmarkGraph
+## This project stores code used for HallmarkGraph
 
 ## The current purpose of this file library is to provide reviewers with reproducible experimental results.
 ### The repository contains the following:
