@@ -33,7 +33,9 @@ main/
 ```
 
 ## Pre-requisites: 
-
+* Linux (Tested on Ubuntu 18.04) 
+* NVIDIA GPU (Tested on Nvidia GeForce RTX 2080 Ti x 16) with CUDA 11.0 and cuDNN 7.5
+* Python
 tensorflow=2.8.2=gpu_py39hc0c9373_0    
 keras=2.8.0=py39h06a4308_0     
 shap=0.45.1    
@@ -47,17 +49,6 @@ Due to insufficient device storage, we use PyTorch exclusively for cleaning up G
 ## How to eproduce the results of the paper:
 
 1. You first need to downloaded the relevant files and store in the corresponding folders repository (see readme.md in each folder).
-   
-2. Modify the file path of the following tags in the `code/HallmarkGraph.py` file:
-
-&emsp;_**data_path**_:  training and testing data in _**clean_data.csv**_
-
-&emsp;_**graph_path**_: The adjacency matrix constructed based on the biological prior knowledge required for BioGCN in _**adjacency_matrix**_
-
-&emsp;_**target_path**_: training and testing label in _**cleaned_data_test_12_7.xlsx**_
-
-&emsp;_**best_model_path**_: Import the saved model in ***save_model(0.4)_18***
-
-3. Modify the file path of the cleaned_data_and_target file in the _06_BioGCN_load_model_and_test_pred.py_ file, and then run it.
-4. If you want to predict hard samples, please set _**Whether_to_predict_hard_stamples = TRUE**_.
-5. If you want to calculate the shap, please set _**Whether_to_calculate_the_shap = TRUE**_.
+2. Run the file `code/HallmarkGraph.py`
+3. If you want to predict hard samples, please set _**Whether_to_predict_hard_stamples = TRUE**_ in `code/HallmarkGraph.py`.
+4. If you want to calculate the shap, please set _**Whether_to_calculate_the_shap = TRUE**_ `code/HallmarkGraph.py`.
