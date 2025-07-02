@@ -22,7 +22,7 @@ main/
 
 ## Pre-requisites: 
 * Linux (Tested on Ubuntu 18.04) 
-* NVIDIA GPU (Tested on Nvidia GeForce RTX 2080 Ti x 16) with CUDA 11.0 and cuDNN 7.5
+* NVIDIA GPU (Tested on Nvidia GeForce RTX 2080 Ti x 2) with CUDA 11.0 and cuDNN 7.5
 * Python (3.8), tensorflow (2.8.2), keras (2.8.0), shap (0.45.1), scikit-learn (1.4.1), matplotlib (3.9.2)    
 
 ## How to eproduce the results of the paper:
