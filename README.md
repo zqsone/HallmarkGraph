@@ -12,7 +12,7 @@ Qingsong Zhang<sup>1</sup> , Fei Liu<sup>1,\*</sup>, Xin Lai<sup>2,3,\*</sup>
 
 We present a graph neural network, HallmarkGraph, the first biologically informed model developed to classify hierarchical tumor subtypes in human cancer. Inspired by cancer hallmarks, the model’s architecture integrates transcriptome profiles and gene regulatory interactions to perform multi-label classification. We evaluate the model on a comprehensive pan-cancer cohort comprising 11,476 samples from 26 primary cancers with 405 subtypes. 
 
-## The current purpose of this file library is to provide reviewers with reproducible experimental results.
+## The current version is to provide reviewers with reproducible experimental results.
 The repository contains the following strucutre and files:
 ```bash
 main/
@@ -35,15 +35,9 @@ main/
 ## Pre-requisites: 
 * Linux (Tested on Ubuntu 18.04) 
 * NVIDIA GPU (Tested on Nvidia GeForce RTX 2080 Ti x 16) with CUDA 11.0 and cuDNN 7.5
-* Python
-tensorflow=2.8.2=gpu_py39hc0c9373_0    
-keras=2.8.0=py39h06a4308_0     
-shap=0.45.1    
-scikit-learn=1.4.1.post1    
-matplotlib=3.9.2    
+* Python (3.8), tensorflow=2.8.2=gpu_py39hc0c9373_0, keras=2.8.0=py39h06a4308_0, shap=0.45.1, scikit-learn=1.4.1.post1, matplotlib=3.9.2    
 
 We only use torch to clean up our GPU devices (our device storage space is insufficient), so this file is not limited by the torch version
-
 Due to insufficient device storage, we use PyTorch exclusively for cleaning up GPU devices. Consequently, this file has no specific PyTorch version dependency.
 
 ## How to eproduce the results of the paper:
