@@ -25,7 +25,7 @@ main/
 * NVIDIA GPU (Tested on Nvidia GeForce RTX 2080 Ti x 2) with CUDA 11.0 and cuDNN 7.5
 * Python (3.8), tensorflow (2.8.2), keras (2.8.0), shap (0.45.1), scikit-learn (1.4.1), matplotlib (3.9.2)    
 
-## How to eproduce the results of the paper:
+## How to reproduce the results:
 
 1. You first need to download the data and trained models and store them in `data` and `best-model` folders, respectively (see readme.md in the folder).
 2. Run the file `code/HallmarkGraph.py`
