@@ -9,7 +9,8 @@ main/
         └── HallmarkGraph.py
   └──data/
         ├── clean_data.csv
-        └── clean_label.xlsx
+        ├── clean_label.xlsx
+        └── model_validation.xlsx
   └──adjacency_matrix/
         ├── Undirected_0...matrix.npz
         ├── ...
@@ -27,9 +28,9 @@ main/
 
 ## How to reproduce the results:
 
-1. You first need to download the data and trained models and store them in `data` and `best-model` folders, respectively (see readme.md in the folder).
+1. You first need to download the data and trained models and store them in `data` and `best_model` folders, respectively (see readme.md in the folder).
 2. Run the file `code/HallmarkGraph.py`
-3. If you want to predict hard samples, please set `Whether_to_predict_hard_stamples = TRUE` in `code/HallmarkGraph.py`.
+3. If you want to predict hard samples (i.e., validation data), please set `Whether_to_predict_hard_stamples = TRUE` in `code/HallmarkGraph.py`. The curated, finalized results can be found in `data/model_validation.xlsx`
 4. If you want to calculate the shap, please set `Whether_to_calculate_the_shap = TRUE` in `code/HallmarkGraph.py`.
 
 ## Usage & Citation 
