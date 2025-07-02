@@ -1,4 +1,4 @@
-# HallmarkGraph: a cancer hallmark informed graph neural network for classifying hierarchical tumor subtypes
+### HallmarkGraph: a cancer hallmark informed graph neural network for classifying hierarchical tumor subtypes
 
 Qingsong Zhang<sup>1</sup> , Fei Liu<sup>1,\*</sup>, Xin Lai<sup>2,3,\*</sup> 
 
@@ -10,40 +10,29 @@ Qingsong Zhang<sup>1</sup> , Fei Liu<sup>1,\*</sup>, Xin Lai<sup>2,3,\*</sup>
 
 <sup>\*</sup>Corresponding author: South China University of Technology, Guangzhou, China. Email: feiliu@scut.edu.cn (FL). Faculty of Medicine and Health Technology, Tampere University, Tampere, Finland. Email: and xin.lai@tuni.fi (XL).
 
-
-## This project stores code used for HallmarkGraph
+We present a graph neural network, HallmarkGraph, the first biologically informed model developed to classify hierarchical tumor subtypes in human cancer. Inspired by cancer hallmarks, the model’s architecture integrates transcriptome profiles and gene regulatory interactions to perform multi-label classification. We evaluate the model on a comprehensive pan-cancer cohort comprising 11,476 samples from 26 primary cancers with 405 subtypes. 
 
 ## The current purpose of this file library is to provide reviewers with reproducible experimental results.
-### The repository contains the following:
+The repository contains the following strucutre and files:
+```bash
+main/
+  └──code/
+        └── HallmarkGraph.py
+  └──data/
+        ├── clean_data.csv
+        └── clean_label.xlsx
+  └──adjacency_matrix/
+        ├── Undirected_0...matrix.npz
+        ├── ...
+        └── Undirected_9...matrix.npz
+  └──best_model/
+        ├── BioGCN_net_(0.4)_target_1.h5
+        ├── ...
+        └── BioGCN_net_(0.4)_target_8.h5
+    ...
+```
 
-code file :           
-
-&emsp;&emsp; 06_BioGCN_load_model_and_test_pred.py        
-
-cleaned_data_and_target file :          
-
-&emsp;&emsp; Training and testing data ： cleaned_data_out.csv       
-
-&emsp;&emsp; Training and testing label :   cleaned_data_test_12_7.xlsx  
-
-adjacency_matrix file:
-
-&emsp;&emsp; ten Hallmark related adjacency matrices            
-
-saved model file :           
-
-&emsp;&emsp; train : test = 0.6 : 0.4 : save_model(0.4)_18         
-
-analysis file :   
-
-&emsp;&emsp; Analysis file of experimental results : analysis    
-
-supplmentary materials file :
-
-&emsp;&emsp; Supplementary documents for manuscript submission
-
-
-## If you wish to repeat our experiment, please refer to the following configuration :     
+## Pre-requisites: 
 
 tensorflow=2.8.2=gpu_py39hc0c9373_0    
 keras=2.8.0=py39h06a4308_0     
@@ -53,13 +42,15 @@ matplotlib=3.9.2
 
 We only use torch to clean up our GPU devices (our device storage space is insufficient), so this file is not limited by the torch version
 
-## how to get result:
+Due to insufficient device storage, we use PyTorch exclusively for cleaning up GPU devices. Consequently, this file has no specific PyTorch version dependency.
 
-1、The following files need to be downloaded from the repository: (1) code file, (2) clean data and target file, (3) adjacency matrix file, (4) saved model file
+## How to eproduce the results of the paper:
 
-2、Modify the file path of the following tags in the _06_BioGCN_load_model_and_test_pred.py_ file:
+1. You first need to downloaded the relevant files and store in the corresponding folders repository (see readme.md in each folder).
+   
+2. Modify the file path of the following tags in the `code/HallmarkGraph.py` file:
 
-&emsp;_**data_path**_:  training and testing data in _**cleaned_data_out.csv**_
+&emsp;_**data_path**_:  training and testing data in _**clean_data.csv**_
 
 &emsp;_**graph_path**_: The adjacency matrix constructed based on the biological prior knowledge required for BioGCN in _**adjacency_matrix**_
 
@@ -67,4 +58,6 @@ We only use torch to clean up our GPU devices (our device storage space is insuf
 
 &emsp;_**best_model_path**_: Import the saved model in ***save_model(0.4)_18***
 
-Modify the file path of the cleaned_data_and_target file in the _06_BioGCN_load_model_and_test_pred.py_ file, and then run it. If you want to predict hard samples, please set _**Whether_to_predict_hard_stamples = TRUE**_, If you want to calculate the shap, please set _**Whether_to_calculate_the_shap = TRUE**_
+3. Modify the file path of the cleaned_data_and_target file in the _06_BioGCN_load_model_and_test_pred.py_ file, and then run it.
+4. If you want to predict hard samples, please set _**Whether_to_predict_hard_stamples = TRUE**_.
+5. If you want to calculate the shap, please set _**Whether_to_calculate_the_shap = TRUE**_.
