@@ -32,7 +32,7 @@ main/
 3. If you want to predict hard samples, please set `Whether_to_predict_hard_stamples = TRUE` in `code/HallmarkGraph.py`.
 4. If you want to calculate the shap, please set `Whether_to_calculate_the_shap = TRUE` in `code/HallmarkGraph.py`.
 
-## Usage 
+## Usage & Citation 
 If you find our work useful, please consider citing it:
 ```bash
 @article{
