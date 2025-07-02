@@ -15,9 +15,9 @@ main/
         ├── ...
         └── Undirected_9...matrix.npz
   └──best_model/
-        ├── BioGCN_net_(0.4)_target_1.h5
+        ├── my_BioGCN_net_(0.4)_target_1.h5
         ├── ...
-        └── BioGCN_net_(0.4)_target_8.h5
+        └── my_BioGCN_net_(0.4)_target_8.h5
 ```
 
 ## Pre-requisites: 
