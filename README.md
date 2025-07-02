@@ -35,14 +35,11 @@ main/
 ## Pre-requisites: 
 * Linux (Tested on Ubuntu 18.04) 
 * NVIDIA GPU (Tested on Nvidia GeForce RTX 2080 Ti x 16) with CUDA 11.0 and cuDNN 7.5
-* Python (3.8), tensorflow=2.8.2=gpu_py39hc0c9373_0, keras=2.8.0=py39h06a4308_0, shap=0.45.1, scikit-learn=1.4.1.post1, matplotlib=3.9.2    
-
-We only use torch to clean up our GPU devices (our device storage space is insufficient), so this file is not limited by the torch version
-Due to insufficient device storage, we use PyTorch exclusively for cleaning up GPU devices. Consequently, this file has no specific PyTorch version dependency.
+* Python (3.8), tensorflow (2.8.2), keras (2.8.0), shap (0.45.1), scikit-learn (1.4.1), matplotlib (3.9.2)    
 
 ## How to eproduce the results of the paper:
 
-1. You first need to downloaded the relevant files and store in the corresponding folders repository (see readme.md in each folder).
+1. You first need to downloaded the data and trained models and store them in `data` and `best-model`, respectively (see readme.md in the folder).
 2. Run the file `code/HallmarkGraph.py`
-3. If you want to predict hard samples, please set _**Whether_to_predict_hard_stamples = TRUE**_ in `code/HallmarkGraph.py`.
-4. If you want to calculate the shap, please set _**Whether_to_calculate_the_shap = TRUE**_ `code/HallmarkGraph.py`.
+3. If you want to predict hard samples, please set `Whether_to_predict_hard_stamples = TRUE` in `code/HallmarkGraph.py`.
+4. If you want to calculate the shap, please set `Whether_to_calculate_the_shap = TRUE` in `code/HallmarkGraph.py`.
