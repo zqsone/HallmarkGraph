@@ -3,9 +3,9 @@
 This file is used for load the saved models, test, prediction and analysis.
 
 Input:
-    1. cleaned data file (cleaned_data_out.csv)
+    1. cleaned data file (clean_data.csv)
     2. graph network file (adjacency_matrix)
-    3. target file (cleaned_data_test.xlsx)
+    3. target file (clean_label.xlsx)
     4. saved model file (best_model_path)
 
 Output:
@@ -50,9 +50,9 @@ if gpus:
 # Training on multiple GPUs using MirrordStrategy
 strategy = tf.distribute.MirroredStrategy()
 # Data file address
-data_path = 'data/cleaned_data_out.csv'
+data_path = 'data/clean_data.csv'
 graph_path = 'adjacency_matrix/Undirected_'
-target_path = 'data/cleaned_data_test.xlsx'
+target_path = 'data/clean_label.xlsx'
 
 cancer_hallmarks_name_list = ['0_Sustaining Proliferative Signal',
                               '1_Evading Growth Suppressor',
@@ -210,7 +210,7 @@ def load_model(file_path):
 
 # Load the best model and test on the test set.
 # you should find the save_models file to change the best_model_path
-best_model_path = 'save_models(0.2)_12_9'
+best_model_path = 'best_model'
 level_max_acc = {}
 for filename in os.listdir(best_model_path):
     match = re.match(r'my_BioGCN_net_\((.*?)\)_target_(\d+)_\d+_\((.*?)\)\.h5', filename)
